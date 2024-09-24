@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# ENVIORNMENT-VARIABLES
+# 
+# Ignore the config.properties file
+/app/src/main/assets/config.properties

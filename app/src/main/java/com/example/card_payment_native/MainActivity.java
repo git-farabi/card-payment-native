@@ -13,6 +13,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+// env
+import com.example.card_payment_native.Utils;
+
 // clover libs
 import com.clover.connector.sdk.v3.PaymentConnector;
 import com.clover.sdk.v3.connector.ExternalIdUtils;
@@ -36,7 +39,6 @@ import com.clover.sdk.v3.remotepay.VaultCardResponse;
 import com.clover.sdk.v3.remotepay.VerifySignatureRequest;
 import com.clover.sdk.v3.remotepay.VoidPaymentRefundResponse;
 import com.clover.sdk.v3.remotepay.VoidPaymentResponse;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             return null;
         }
 
-        String remoteApplicationId = "";
+        String remoteApplicationId = Utils.getRemoteApplicationId(this);
 
         IPaymentConnectorListener paymentConnectorListener = new IPaymentConnectorListener() {
             @Override
