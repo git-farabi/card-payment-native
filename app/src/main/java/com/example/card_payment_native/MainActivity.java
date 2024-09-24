@@ -11,6 +11,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+// clover libs
+import com.clover.connector.sdk.v3.PaymentConnector;
+import com.clover.sdk.v3.connector.IPaymentConnectorListener;
+import com.clover.sdk.v3.remotepay.SaleResponse;
+import com.clover.sdk.util.CloverAccount;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
